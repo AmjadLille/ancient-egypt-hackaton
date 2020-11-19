@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import L from 'leaflet';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import styled from 'styled-components'
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 import habou from '../assets/pin2.png';
 import Philae from '../assets/pin2.png';
 import Hatchepsout from '../assets/pin2.png';
@@ -18,6 +18,9 @@ import Kheops from '../assets/pin2.png'
 import Gizeh from '../assets/pin2.png'
 import Mykerinos from '../assets/pin2.png'
 
+const Height = styled.div`
+  height: 500px;
+`
 
 class Maps extends Component {
   
@@ -210,10 +213,12 @@ class Maps extends Component {
     const positionKheopsIcon = [this.state.KheopsIcon.lat, this.state.KheopsIcon.lng];
     const positionGizehIcon = [this.state.GizehIcon.lat, this.state.GizehIcon.lng];
     const positionMykerinosIcon = [this.state.MykerinosIcon.lat, this.state.MykerinosIcon.lng];
+
     return (
-      <Map className="map" center={positionHabouIcon} zoom={this.state.zoom}>
+      <MapContainer className="map" center={positionHabouIcon} zoom={this.state.zoom}>
+        <Height>
         <TileLayer
-        attribution = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
+        attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <Marker position={positionHabouIcon} icon={this.HabouIcon}>
@@ -291,7 +296,8 @@ class Maps extends Component {
           La pyramide de Mikérinos
           </Popup>
         </Marker>
-      </Map>
+        </Height>
+      </MapContainer>
     );
   }
 }
