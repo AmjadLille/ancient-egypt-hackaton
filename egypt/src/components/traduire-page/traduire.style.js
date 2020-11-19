@@ -100,7 +100,7 @@ export const Header = styled.div`
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.4);
   img {
-    width: 200px;
+    width: 220px;
   }
 `;
 export const Trad = styled.div``;
