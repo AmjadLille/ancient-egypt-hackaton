@@ -1,78 +1,63 @@
 import React from "react";
 import styled from "styled-components";
-import egypt from "./images/egypt.jpg";
-import image from "./images/image.png";
 import { Route, Switch, Link } from "react-router-dom";
 import About from "./components/About";
+import Traduir from "./components/traduire-page/traduire";
+import HomePage from "./components/homepage";
 
 const ContainerStyled = styled.div`
   background-color: black;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
 `;
 
-const LogoStyled = styled.img`
-  padding-bottom: 0px;
-  width: 300px;
-`;
-
-const EgyptStyled = styled.img`
-  margin-left: 300px;
-  margin-top: -800px;
-  height: 800px;
-`;
+const EgyptStyled = styled.img``;
 
 const MenuStyled = styled.div`
-  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  img {
+    width: 150px;
+  }
 `;
 
-const LiStyled = styled.li`
-  list-style: none;
-  background-repeat: no-repeat;
-  background-position: left center;
-  padding: 50px;
-  padding-left: 20px;
-  font-size: 20px;
+const List = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
-const SpanStyled = styled.span`
-  color: white;
-  text-decoration: none;
+const Right = styled.div`
+  width: 85%;
 `;
 
 function App() {
   return (
     <ContainerStyled>
-      <LogoStyled src={image} alt="ancientegypt" />
       <MenuStyled>
-        <ul>
-          <LiStyled>
-            <a href="">
-              <SpanStyled>Hieroglyphe</SpanStyled>
-            </a>
-          </LiStyled>
-          <LiStyled>
-            <a href="">
-              <SpanStyled>Carte</SpanStyled>
-            </a>
-          </LiStyled>
-          <LiStyled>
-            <a href="">
-              <SpanStyled>Pyramides</SpanStyled>
-            </a>
-          </LiStyled>
-          <LiStyled>
-            <Link to="/about">
-              <SpanStyled>Qui sommes nous ?</SpanStyled>
-            </Link>
-          </LiStyled>
-        </ul>
-      </MenuStyled>
-      <Switch>
-        <Route exact path="/about" component={About}></Route>
-      </Switch>
+        <Link to="/">
+          <img src="/images/logo.png" alt="egypt" />
+        </Link>
 
-      <EgyptStyled src={egypt} alt="egypt" />
+        <List>
+          <Link to="/traduire">Hieroglyphe</Link>
+          <Link to="">Carte</Link>
+          <Link to="">Pyramides</Link>
+          <Link to="/about">Qui sommes nous ?</Link>
+        </List>
+      </MenuStyled>
+      <Right>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/about" component={About} />
+          <Route path="/traduire" component={Traduir} />
+        </Switch>
+      </Right>
     </ContainerStyled>
   );
 }
