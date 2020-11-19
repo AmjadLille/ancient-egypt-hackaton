@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { Route, Switch, Link } from "react-router-dom";
 import About from "./components/About";
-import Traduir from "./components/traduire-page/traduire";
+import Traduire from "./components/traduire-page/traduire";
 import HomePage from "./components/homepage";
+import Maps from "./components/Maps/Maps"
 
 const ContainerStyled = styled.div`
   background-color: black;
@@ -46,7 +47,7 @@ function App() {
 
         <List>
           <Link to="/traduire">Hieroglyphe</Link>
-          <Link to="">Carte</Link>
+          <Link to="/Maps">Carte</Link>
           <Link to="">Pyramides</Link>
           <Link to="/about">Qui sommes nous ?</Link>
         </List>
@@ -55,7 +56,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/about" component={About} />
-          <Route path="/traduire" component={Traduir} />
+          <Route path="/traduire" component={Traduire} />
+          <Route path="/Maps" component={Maps} />
         </Switch>
       </Right>
     </ContainerStyled>

@@ -2,24 +2,29 @@ import React, {Component} from 'react';
 import L from 'leaflet';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import styled from 'styled-components'
-import habou from '../assets/pin2.png';
-import Philae from '../assets/pin2.png';
-import Hatchepsout from '../assets/pin2.png';
-import Memnon from '../assets/pin2.png';
-import Sethi from '../assets/pin2.png';
-import Sobek from '../assets/pin2.png';
-import Louxor from '../assets/pin2.png';
-import Horus from '../assets/pin2.png';
-import Simbel from '../assets/pin2.png';
-import Karnak from '../assets/pin2.png';
-import Djeser from '../assets/pin2.png'
-import Snefrou from '../assets/pin2.png'
-import Kheops from '../assets/pin2.png'
-import Gizeh from '../assets/pin2.png'
-import Mykerinos from '../assets/pin2.png'
+import habou from '../../assets/pin2.png';
+import Philae from '../../assets/pin2.png';
+import Hatchepsout from '../../assets/pin2.png';
+import Memnon from '../../assets/pin2.png';
+import Sethi from '../../assets/pin2.png';
+import Sobek from '../../assets/pin2.png';
+import Louxor from '../../assets/pin2.png';
+import Horus from '../../assets/pin2.png';
+import Simbel from '../../assets/pin2.png';
+import Karnak from '../../assets/pin2.png';
+import Djeser from '../../assets/pin2.png'
+import Snefrou from '../../assets/pin2.png'
+import Kheops from '../../assets/pin2.png'
+import Gizeh from '../../assets/pin2.png'
+import Mykerinos from '../../assets/pin2.png'
 
 const Height = styled.div`
   height: 500px;
+  width: 100vw;
+`
+
+const Main = styled.div`
+margin-top: 48.4vh;
 `
 
 class Maps extends Component {
@@ -215,6 +220,7 @@ class Maps extends Component {
     const positionMykerinosIcon = [this.state.MykerinosIcon.lat, this.state.MykerinosIcon.lng];
 
     return (
+      <Main>
       <MapContainer className="map" center={positionHabouIcon} zoom={this.state.zoom}>
         <Height>
         <TileLayer
@@ -298,6 +304,7 @@ class Maps extends Component {
         </Marker>
         </Height>
       </MapContainer>
+      </Main>
     );
   }
 }
