@@ -8,6 +8,7 @@ import HomePage from "./components/homepage";
 const ContainerStyled = styled.div`
   background-color: black;
   width: 100%;
+  height: 100%;
   min-height: 100vh;
   background-size: cover;
   display: flex;
@@ -15,21 +16,30 @@ const ContainerStyled = styled.div`
   justify-content: space-between;
 `;
 
-const EgyptStyled = styled.img``;
-
 const MenuStyled = styled.div`
   display: flex;
   flex-direction: column;
   width: 15%;
+  background-color: rgba(0, 0, 0, 0.4);
   img {
-    width: 150px;
+    width: 100%;
   }
 `;
 
 const List = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 100px;
+  height: 30%;
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    padding: 150px auto;
+  }
 `;
 
 const Right = styled.div`
@@ -40,15 +50,23 @@ function App() {
   return (
     <ContainerStyled>
       <MenuStyled>
-        <Link to="/">
-          <img src="/images/logo.png" alt="egypt" />
+        <Link to="/" style={{ padding: "50px auto" }}>
+          <img src="/images/old.jpg" alt="egypt" />
         </Link>
 
         <List>
-          <Link to="/traduire">Hieroglyphe</Link>
-          <Link to="">Carte</Link>
-          <Link to="">Pyramides</Link>
-          <Link to="/about">Qui sommes nous ?</Link>
+          <Link to="">
+            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Carte</a>
+          </Link>
+          <Link to="">
+            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Pyramides</a>
+          </Link>
+          <Link to="/traduire">
+            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Hieroglyphe</a>
+          </Link>
+          <Link to="/about">
+            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Qui sommes nous ?</a>
+          </Link>
         </List>
       </MenuStyled>
       <Right>
