@@ -346,7 +346,7 @@ class Maps extends Component {
           </StyleLi>
         </StyledUl>
         <MapStyle>
-          <Map className="map" style={{  height:'500px'}} center={positionHabouIcon} zoom={this.state.zoom}>
+          <Map className="map" style={{marginLeft:'0vw',marginTop:'0vw', marginBottom:'0vw', height:'1000px', width:'83.5vw'}} center={positionHabouIcon} zoom={this.state.zoom}>
             
               <TileLayer attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" />
               <Marker position={positionHabouIcon} icon={this.HabouIcon}>
