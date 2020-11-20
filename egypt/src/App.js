@@ -4,6 +4,7 @@ import { Route, Switch, Link } from "react-router-dom";
 import About from "./components/About";
 import Traduir from "./components/traduire-page/traduire";
 import HomePage from "./components/homepage";
+import Dieu from "./components/Dieu";
 
 const ContainerStyled = styled.div`
   background-color: black;
@@ -33,6 +34,7 @@ const List = styled.div`
   align-items: center;
   padding-top: 100px;
   height: 30%;
+  max-height: 30vh;
 
   a {
     text-decoration: none;
@@ -55,18 +57,10 @@ function App() {
         </Link>
 
         <List>
-          <Link to="">
-            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Carte</a>
-          </Link>
-          <Link to="">
-            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Pyramides</a>
-          </Link>
-          <Link to="/traduire">
-            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Hieroglyphe</a>
-          </Link>
-          <Link to="/about">
-            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Qui sommes nous ?</a>
-          </Link>
+          <Link to="/traduire">Hieroglyphe</Link>
+          <Link to="">Carte</Link>
+          <Link to="/Dieu">Gods of Egypt</Link>
+          <Link to="/about">Qui sommes nous ?</Link>
         </List>
       </MenuStyled>
       <Right>
@@ -74,6 +68,7 @@ function App() {
           <Route exact path="/" component={HomePage} />
           <Route path="/about" component={About} />
           <Route path="/traduire" component={Traduir} />
+          <Route path="/Dieu" component={Dieu} />
         </Switch>
       </Right>
     </ContainerStyled>
