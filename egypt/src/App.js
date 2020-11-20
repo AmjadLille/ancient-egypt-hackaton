@@ -5,6 +5,7 @@ import About from "./components/About";
 import Traduire from "./components/traduire-page/traduire";
 import HomePage from "./components/homepage";
 import Maps from "./components/Maps/Maps";
+import Dieu from "./components/Dieu";
 
 const ContainerStyled = styled.div`
   background-color: black;
@@ -35,12 +36,16 @@ const List = styled.div`
   align-items: center;
   padding-top: 100px;
   height: 30%;
+  max-height: 30vh;
 
   a {
     text-decoration: none;
     color: white;
     font-size: 24px;
     padding: 150px auto;
+    &:hover {
+      color: #ffd700;
+    }
   }
 `;
 
@@ -72,9 +77,13 @@ function App() {
               Hieroglyphe
             </a>
           </Link>
+          <Link to="/Dieu">
+            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>
+              Gods of Egypt</a>
+          </Link>
           <Link to="/about">
             <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>
-              Qui sommes nous ?
+              Who are we ?
             </a>
           </Link>
         </List>
@@ -85,6 +94,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/traduire" component={Traduire} />
           <Route path="/Maps" component={Maps} />
+          <Route path="/Dieu" component={Dieu} />
         </Switch>
       </Right>
     </ContainerStyled>
