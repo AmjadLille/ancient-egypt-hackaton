@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import L from "leaflet";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { Map, TileLayer, Marker, Popup } from "react-leaflet";
 import styled from "styled-components";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -20,9 +20,7 @@ import Kheops from "../../assets/pin2.png";
 import Gizeh from "../../assets/pin2.png";
 import Mykerinos from "../../assets/pin2.png";
 
-const Height = styled.div`
-  height: 500px;
-`;
+
 
 const Main = styled.div`
   width: 100%;
@@ -348,8 +346,8 @@ class Maps extends Component {
           </StyleLi>
         </StyledUl>
         <MapStyle>
-          <MapContainer className="map" center={positionHabouIcon} zoom={this.state.zoom}>
-            <Height>
+          <Map className="map" style={{  height:'500px'}} center={positionHabouIcon} zoom={this.state.zoom}>
+            
               <TileLayer attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" />
               <Marker position={positionHabouIcon} icon={this.HabouIcon}>
                 <Popup>Médinet Habou</Popup>
@@ -396,8 +394,8 @@ class Maps extends Component {
               <Marker position={positionMykerinosIcon} icon={this.MykerinosIcon}>
                 <Popup>La pyramide de Mikérinos</Popup>
               </Marker>
-            </Height>
-          </MapContainer>
+          
+          </Map>
         </MapStyle>
       </Main>
     );
