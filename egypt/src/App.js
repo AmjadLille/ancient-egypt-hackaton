@@ -9,6 +9,7 @@ import Dieu from "./components/Dieu";
 const ContainerStyled = styled.div`
   background-color: black;
   width: 100%;
+  height: 100%;
   min-height: 100vh;
   background-size: cover;
   display: flex;
@@ -16,21 +17,30 @@ const ContainerStyled = styled.div`
   justify-content: space-between;
 `;
 
-const EgyptStyled = styled.img``;
-
 const MenuStyled = styled.div`
   display: flex;
   flex-direction: column;
   width: 15%;
+  background-color: rgba(0, 0, 0, 0.4);
   img {
-    width: 150px;
+    width: 100%;
   }
 `;
 
 const List = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 100px;
+  height: 30%;
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    padding: 150px auto;
+  }
 `;
 
 const Right = styled.div`
@@ -41,8 +51,8 @@ function App() {
   return (
     <ContainerStyled>
       <MenuStyled>
-        <Link to="/">
-          <img src="/images/logo.png" alt="egypt" />
+        <Link to="/" style={{ padding: "50px auto" }}>
+          <img src="/images/old.jpg" alt="egypt" />
         </Link>
 
         <List>
