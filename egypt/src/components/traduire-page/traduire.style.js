@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-image: url("/images/egypt.jpg");
+  background-image: url("/images/hero.jpg");
   width: 100%;
   min-height: 100vh;
   max-height: 150vh;
@@ -21,6 +21,7 @@ export const Title = styled.div`
   color: white;
   font-size: 70px;
   padding: 100px;
+  padding-left: 25vh;
 `;
 
 export const Label = styled.p`
@@ -28,7 +29,7 @@ export const Label = styled.p`
   font-size: 40px;
   width: 100%;
   padding-top: 8vh;
-  color: black;
+  color: white;
 `;
 
 export const Text = styled.input`
@@ -41,7 +42,7 @@ export const Text = styled.input`
   font-size: 20px;
   font-weight: bolder;
 
-  background: transparent;
+  background-color: rgba(255, 255, 255, 0.4);
   &:focus {
     outline: none;
   }
@@ -78,7 +79,7 @@ export const Header = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.4);
+
   img {
     width: 220px;
   }
