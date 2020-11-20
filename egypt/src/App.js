@@ -2,14 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import { Route, Switch, Link } from "react-router-dom";
 import About from "./components/About";
-import Traduir from "./components/traduire-page/traduire";
+import Traduire from "./components/traduire-page/traduire";
 import HomePage from "./components/homepage";
+import Maps from "./components/Maps/Maps";
 import Dieu from "./components/Dieu";
 import Carte from './components/Carte';
 
 const ContainerStyled = styled.div`
   background-color: black;
-  width: 100%;
+  width: 99vw;
   height: 100%;
   min-height: 100vh;
   background-size: cover;
@@ -32,6 +33,7 @@ const List = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  max-height: 30vh;
   align-items: center;
   padding-top: 100px;
   height: 30%;
@@ -61,20 +63,32 @@ function App() {
         </Link>
 
         <List>
-          <Link to="">
-            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Carte</a>
+        <Link to="">
+            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>
+              Pyramides
+            </a>
+          </Link>
+          <Link to="/Maps">
+            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>
+              Monuments
+            </a>
           </Link>
           <Link to="/traduire">
-            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Hieroglyphe</a>
+            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>
+              Hieroglyphe
+            </a>
           </Link>
           <Link to="/Dieu">
-            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Gods of Egypt</a>
+            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>
+              Gods of Egypt</a>
           </Link>
           <Link to="/Carte">
             <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Chariotry race</a>
           </Link>
           <Link to="/about">
-            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Qui sommes nous ?</a>
+            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>
+              Who are we ?
+            </a>
           </Link>
         </List>
       </MenuStyled>
@@ -82,7 +96,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/about" component={About} />
-          <Route path="/traduire" component={Traduir} />
+          <Route path="/traduire" component={Traduire} />
+          <Route path="/Maps" component={Maps} />
           <Route path="/Dieu" component={Dieu} />
           <Route path="/Carte" component={Carte} />
         </Switch>
