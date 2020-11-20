@@ -41,6 +41,9 @@ const List = styled.div`
     color: white;
     font-size: 24px;
     padding: 150px auto;
+    &:hover {
+      color: #ffd700;
+    }
   }
 `;
 
@@ -57,10 +60,18 @@ function App() {
         </Link>
 
         <List>
-          <Link to="/traduire">Hieroglyphe</Link>
-          <Link to="">Carte</Link>
-          <Link to="/Dieu">Gods of Egypt</Link>
-          <Link to="/about">Qui sommes nous ?</Link>
+          <Link to="">
+            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Carte</a>
+          </Link>
+          <Link to="/traduire">
+            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Hieroglyphe</a>
+          </Link>
+          <Link to="/Dieu">
+            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Gods of Egypt</a>
+          </Link>
+          <Link to="/about">
+            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Qui sommes nous ?</a>
+          </Link>
         </List>
       </MenuStyled>
       <Right>
