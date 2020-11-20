@@ -59,7 +59,7 @@ function App() {
         <List>
           <Link to="/Maps">
             <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>
-              Carte
+              Monuments
             </a>
           </Link>
           <Link to="">
