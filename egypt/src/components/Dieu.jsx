@@ -83,19 +83,65 @@ const StyledComponents = () => (
       </Title>
     </Container>
     <Container>
-      <Title></Title>
+      <Title>
+        Seth ou Seth était le dieu du désert et des tempêtes qui, plus tard, a
+        été associé également au chaos et à l'obscurité. Il était représenté la
+        plupart du temps sous la forme d’un homme à tête de chien pourvu d’un
+        long museau et d’une queue fourchue ; on pouvait cependant parfois le
+        voir représenté en cochon, crocodile, scorpion ou en hippopotame. Seth
+        est l'un des personnages principaux de la légende d'Osiris et d'Isis. En
+        raison de la popularité croissante du culte d'Osiris, Seth s’est vu
+        diabolisé et ses images ont été retirées des temples. Dans certaines
+        parties de l'Égypte ancienne, il a cependant continué à être vénéré
+        comme l'une des principales divinités.
+      </Title>
     </Container>
     <Container>
-      <Title></Title>
+      <Title>
+        En tant qu'épouse d'Amon et mère de Khons, Mout était l'un des
+        principaux.Vénérée comme la grande mère divine, Mut était généralement
+        représentée comme une femme portant une couronne blanche et rouge, mais
+        elle était aussi parfois représentée avec la tête ou le corps d'un
+        vautour ou sous la forme d’une vache car, dans la période ultérieure,
+        elle a fusionné avec Hathor, une autre grande divinité « mère », qui
+        était généralement représentée sous la forme d’une femme avec des cornes
+        de vache ou, plus directement, sous la forme d’une vache.
+      </Title>
     </Container>
     <Container>
-      <Title></Title>
+      <Title>
+        Bastet était une déesse féline qui était représentée soit sous la forme
+        d'un chat, soit sous la forme d'une femme à tête de chat. Elle était la
+        fille du dieu du soleil Râ et était étroitement associée au chat
+        domestique. Bastet était vénérée pour sa nature maternelle et
+        protectrice et était souvent peinte entourée de chatons. Mais on croyait
+        cependant qu’elle savait également se montrer féroce lorsque cela était
+        nécessaire – en effet, les chats étaient capables de tuer les serpents,
+        l'une des créatures les plus mortelles de l'Égypte ancienne.
+      </Title>
     </Container>
     <Container>
-      <Title></Title>
+      <Title>
+        Amon ou Amun, qui se traduit par "Le Caché" était à la tête du panthéon
+        thébain des dieux et déesses. Vénéré comme le roi des dieux (tout comme
+        Zeus en Grèce antique), Amon était généralement peint sous une forme
+        humaine, mais il était parfois représenté avec la tête de bélier. Comme
+        beaucoup d'autresDieux Égyptiens, qui ont finalement été assimilés à
+        leurs « versions » locales, Amon a plus tard fusionné avec Râ pour
+        former Amon-Râ qui est demeuré le dieu principal pendant toute la
+        période de l'Égypte ancienne.
+      </Title>
     </Container>
     <Container>
-      <Title></Title>
+      <Title>
+        Ptah a été à l’origine un dieu local à Memphis. Cependant, à mesure que
+        l'influence de Memphis s'étendait sur l'Égypte, il est devenu populaire
+        ailleurs partout ailleurs. Il était un dieu créateur et la divinité
+        protectrice de l'artisanat et du travail manuel. Ptah était généralement
+        représenté comme une figure momifiée avec ses mains dépassant du
+        bandage, tenant un bâton gravé des symboles de l’autorité et de la
+        stabilité.
+      </Title>
     </Container>
   </div>
 );
