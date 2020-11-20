@@ -20,11 +20,11 @@ import Mykerinos from '../../assets/pin2.png'
 
 const Height = styled.div`
   height: 500px;
-  width: 100vw;
 `
 
 const Main = styled.div`
-margin-top: 48.4vh;
+margin-top: 47.5vh;
+width: 80vw;
 `
 
 class Maps extends Component {

@@ -4,11 +4,14 @@ export const Container = styled.div`
   background-image: url("/images/egypt.jpg");
   width: 100%;
   min-height: 100vh;
+  max-height: 150vh;
   background-size: cover;
   form {
     margin: 6vh auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 20%;
   }
 `;
@@ -37,8 +40,7 @@ export const Text = styled.input`
   border-radius: 10px;
   font-size: 20px;
   font-weight: bolder;
-  left: 30%;
-  top: 200px;
+
   background: transparent;
   &:focus {
     outline: none;
@@ -51,28 +53,6 @@ export const Text = styled.input`
   ::placeholder {
     color: white;
     opacity: 0.6;
-  }
-`;
-
-export const Button = styled.button`
-  width: 20vw;
-  height: 30px;
-  margin-top: 10px;
-  transition: all 0.5s ease;
-  color: black;
-  border: 3px solid black;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-
-  font-size: 14px;
-  background-color: transparent;
-  padding: 10px;
-  outline: none;
-  border-radius: 25px;
-
-  &:hover {
-    background-color: #fff;
   }
 `;
 
