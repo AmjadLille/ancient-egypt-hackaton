@@ -1,5 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import un from "../images/un.png";
+import deux from "../images/deux.png";
+import trois from "../images/trois.png";
+import quatre from "../images/quatre.png";
+import cinq from "../images/cinq.png";
+import six from "../images/six.png";
+import sept from "../images/sept.png";
+import huit from "../images/huit.png";
+import neuf from "../images/neuf.png";
+import dix from "../images/dix.png";
 
 const Container = styled.div`
   font-size: 16px;
@@ -18,6 +28,7 @@ const Title = styled.h1`
 const StyledComponents = () => (
   <div>
     <Container>
+      <img src={un} alt="un"></img>
       <Title>
         Osiris était un roi sage qui étaitmarié à sa sœur, Isis. Lorsqu'il fut
         assassiné par leur frère Seth, elleusa de magie pour le ressusciter dans
@@ -32,6 +43,7 @@ const StyledComponents = () => (
       </Title>
     </Container>
     <Container>
+      <img src={deux} alt="deux"></img>
       <Title>
         Isis était l'ultime déesse car elle était la mère d'Horus et à la fois
         épouse et sœur d'Osiris. Lorsque son mari bien-aimé fut assassiné par
@@ -46,6 +58,7 @@ const StyledComponents = () => (
       </Title>
     </Container>
     <Container>
+      <img src={trois} alt="trois"></img>
       <Title>
         L'un des plus importants Dieux Égyptiens était le fils d'Osiris et
         d'Isis. Selon le célèbre mythe, il a vengé le meurtre de son père en
@@ -58,6 +71,7 @@ const StyledComponents = () => (
       </Title>
     </Container>
     <Container>
+      <img src={quatre} alt="quatre"></img>
       <Title>
         Le dieu de la sagesse, de l'écriture et de la magie était le plus
         souvent représenté sous la forme d’un homme à tête d'ibis. Thot était le
@@ -70,6 +84,7 @@ const StyledComponents = () => (
       </Title>
     </Container>
     <Container>
+      <img src={cinq} alt="cinq"></img>
       <Title>
         Râ (ou Rê) était le dieu du soleil et l'une des divinités plus
         importantes de l’Égypte antique. Il fut associé à la construction des
@@ -83,6 +98,7 @@ const StyledComponents = () => (
       </Title>
     </Container>
     <Container>
+      <img src={six} alt="six"></img>
       <Title>
         Seth ou Seth était le dieu du désert et des tempêtes qui, plus tard, a
         été associé également au chaos et à l'obscurité. Il était représenté la
@@ -97,6 +113,7 @@ const StyledComponents = () => (
       </Title>
     </Container>
     <Container>
+      <img src={sept} alt="sept"></img>
       <Title>
         En tant qu'épouse d'Amon et mère de Khons, Mout était l'un des
         principaux.Vénérée comme la grande mère divine, Mut était généralement
@@ -109,6 +126,7 @@ const StyledComponents = () => (
       </Title>
     </Container>
     <Container>
+      <img src={huit} alt="huit"></img>
       <Title>
         Bastet était une déesse féline qui était représentée soit sous la forme
         d'un chat, soit sous la forme d'une femme à tête de chat. Elle était la
@@ -121,6 +139,7 @@ const StyledComponents = () => (
       </Title>
     </Container>
     <Container>
+      <img src={neuf} alt="neuf"></img>
       <Title>
         Amon ou Amun, qui se traduit par "Le Caché" était à la tête du panthéon
         thébain des dieux et déesses. Vénéré comme le roi des dieux (tout comme
@@ -133,6 +152,7 @@ const StyledComponents = () => (
       </Title>
     </Container>
     <Container>
+      <img src={dix} alt="dix"></img>
       <Title>
         Ptah a été à l’origine un dieu local à Memphis. Cependant, à mesure que
         l'influence de Memphis s'étendait sur l'Égypte, il est devenu populaire
