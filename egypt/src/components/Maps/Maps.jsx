@@ -27,12 +27,11 @@ const Height = styled.div`
 const Main = styled.div`
   width: 100%;
   background-image: url("https://wallpaperaccess.com/full/1659875.jpg");
-  
 `;
 
 const CarouselStyle = styled.img`
   height: 92vh;
-`
+`;
 
 const Title = styled.h1`
   color: white;
@@ -44,7 +43,7 @@ const Title = styled.h1`
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   background-image: url("https://wallpaperaccess.com/full/1659875.jpg");
-`
+`;
 
 const Title2 = styled.h2`
   border-top: 2px solid black;
@@ -56,7 +55,7 @@ const Title2 = styled.h2`
   color: white;
   text-shadow: 1px 1px 2px black;
   background-image: url("https://wallpaperaccess.com/full/1659875.jpg");
-`
+`;
 const TitleP = styled.h2`
   border-top: 3px solid white;
   border-bottom: 3px solid white;
@@ -65,7 +64,7 @@ const TitleP = styled.h2`
   margin: 0;
   color: white;
   text-shadow: 1px 1px 2px black;
-`
+`;
 
 const Text = styled.p`
   padding: 0 5vw 0 5vw;
@@ -73,26 +72,26 @@ const Text = styled.p`
   font-size: 1.5em;
   color: white;
   text-shadow: 1px 1px 2px black;
-`
+`;
 
 const TextLi = styled.p`
   color: white;
   text-shadow: 1px 1px 2px black;
-`
+`;
 
 const StyleLi = styled.li`
   font-size: 1.5em;
   padding: 0 5vw 0 5vw;
   text-align: center;
-`
+`;
 
 const StyledUl = styled.ul`
   list-style-type: none;
-`
+`;
 
 const MapStyle = styled.div`
   border: 6px solid gold;
-`
+`;
 
 class Maps extends Component {
   state = {
@@ -266,67 +265,22 @@ class Maps extends Component {
   });
 
   render() {
-    const positionPhilaeIcon = [
-      this.state.PhilaeIcon.lat,
-      this.state.PhilaeIcon.lng,
-    ];
-    const positionHabouIcon = [
-      this.state.habouIcon.lat,
-      this.state.habouIcon.lng,
-    ];
-    const positionHatchepsoutIcon = [
-      this.state.HatchepsoutIcon.lat,
-      this.state.HatchepsoutIcon.lng,
-    ];
-    const positionMemnonIcon = [
-      this.state.MemnonIcon.lat,
-      this.state.MemnonIcon.lng,
-    ];
-    const positionSethiIcon = [
-      this.state.SethiIcon.lat,
-      this.state.SethiIcon.lng,
-    ];
-    const positionSobekIcon = [
-      this.state.SobekIcon.lat,
-      this.state.SobekIcon.lng,
-    ];
-    const positionLouxorIcon = [
-      this.state.LouxorIcon.lat,
-      this.state.LouxorIcon.lng,
-    ];
-    const positionHorusIcon = [
-      this.state.HorusIcon.lat,
-      this.state.HorusIcon.lng,
-    ];
-    const positionSimbelIcon = [
-      this.state.SimbelIcon.lat,
-      this.state.SimbelIcon.lng,
-    ];
-    const positionKarnakIcon = [
-      this.state.KarnakIcon.lat,
-      this.state.KarnakIcon.lng,
-    ];
-    const positionDjeserIcon = [
-      this.state.DjeserIcon.lat,
-      this.state.DjeserIcon.lng,
-    ];
-    const positionSnefrouIcon = [
-      this.state.SnefrouIcon.lat,
-      this.state.SnefrouIcon.lng,
-    ];
-    const positionKheopsIcon = [
-      this.state.KheopsIcon.lat,
-      this.state.KheopsIcon.lng,
-    ];
-    const positionGizehIcon = [
-      this.state.GizehIcon.lat,
-      this.state.GizehIcon.lng,
-    ];
-    const positionMykerinosIcon = [
-      this.state.MykerinosIcon.lat,
-      this.state.MykerinosIcon.lng,
-    ];
-    
+    const positionPhilaeIcon = [this.state.PhilaeIcon.lat, this.state.PhilaeIcon.lng];
+    const positionHabouIcon = [this.state.habouIcon.lat, this.state.habouIcon.lng];
+    const positionHatchepsoutIcon = [this.state.HatchepsoutIcon.lat, this.state.HatchepsoutIcon.lng];
+    const positionMemnonIcon = [this.state.MemnonIcon.lat, this.state.MemnonIcon.lng];
+    const positionSethiIcon = [this.state.SethiIcon.lat, this.state.SethiIcon.lng];
+    const positionSobekIcon = [this.state.SobekIcon.lat, this.state.SobekIcon.lng];
+    const positionLouxorIcon = [this.state.LouxorIcon.lat, this.state.LouxorIcon.lng];
+    const positionHorusIcon = [this.state.HorusIcon.lat, this.state.HorusIcon.lng];
+    const positionSimbelIcon = [this.state.SimbelIcon.lat, this.state.SimbelIcon.lng];
+    const positionKarnakIcon = [this.state.KarnakIcon.lat, this.state.KarnakIcon.lng];
+    const positionDjeserIcon = [this.state.DjeserIcon.lat, this.state.DjeserIcon.lng];
+    const positionSnefrouIcon = [this.state.SnefrouIcon.lat, this.state.SnefrouIcon.lng];
+    const positionKheopsIcon = [this.state.KheopsIcon.lat, this.state.KheopsIcon.lng];
+    const positionGizehIcon = [this.state.GizehIcon.lat, this.state.GizehIcon.lng];
+    const positionMykerinosIcon = [this.state.MykerinosIcon.lat, this.state.MykerinosIcon.lng];
+
     return (
       <Main>
         <Title style={{ fontFamily: "'Oswald', sans-serif" }}>Our most iconic monuments</Title>
@@ -361,97 +315,89 @@ class Maps extends Component {
           <StyleLi>
             <TitleP>Temple of Hatshepsut</TitleP>
             <TextLi> It is a colonnaded structure, which was designed and implemented by Senemut, the royal architect of Hatshepsut, to serve for her posthumous worship and to honor the glory of Amun. The temple is built into a cliff face that rises sharply above it and consists of three layered terraces reaching 30 meters (97 ft ) in height. These terraces are connected by long ramps which were once surrounded by gardens.</TextLi>
-            </StyleLi>
+          </StyleLi>
           <StyleLi>
-          <TitleP>Bent Pyramid</TitleP>
+            <TitleP>Bent Pyramid</TitleP>
             <TextLi>The Bent Pyramid located at Dahshur was the second pyramid built by pharaoh Sneferu. Mysteriously, the pyramid rises from the desert at an angle of 55 degrees and then suddenly changes to a more gradual angle of 43 degrees. One theory holds that due to the steepness of the original angle the weight to be added above the inner chambers and passageways became to large, forcing the builders to adopt a shallower angle. It is the only pyramid in Egypt of which the outer casing of polished limestone is still largely intact.</TextLi>
-            </StyleLi>
+          </StyleLi>
           <StyleLi>
-          <TitleP>Step Pyramid of Djoser</TitleP>
+            <TitleP>Step Pyramid of Djoser</TitleP>
             <TextLi>The Step Pyramid of Djoser at the Saqqara necropolis was the very first pyramid built by the ancient Egyptians. It was constructed during the 27th century BC for the burial of Pharaoh Djoser by his Vizier Imhotep. The ancient monument began as a traditional, flat-roofed mastaba but by the end of Djoser’s reign it had risen to a six stepped layer Pyramid and stood 204 feet (62 meters) high. As in earlier mastaba tombs, the burial chambers of the Step Pyramid are underground, hidden in a maze of tunnels.</TextLi>
-            </StyleLi>
+          </StyleLi>
           <StyleLi>
-          <TitleP>Luxor Temple</TitleP>
+            <TitleP>Luxor Temple</TitleP>
             <TextLi>The Luxor temple was dedicated to the three Egyptian gods Amun, Mut, and Chons. The ancient temple was the center of the festival of Opet, Thebes’ most important festival. During the annual festival the statues of the three Gods were escorted to the temple of Luxor along the avenue of sphinxes that connect the 2 temples.</TextLi>
-            </StyleLi>
+          </StyleLi>
           <StyleLi>
-          <TitleP>Red Pyramid</TitleP>
+            <TitleP>Red Pyramid</TitleP>
             <TextLi>Built by Pharaoh Sneferu, the Red Pyramid is the world’s first successful attempt at constructing a “true” smooth-sided pyramid. At 104 meters it is the 4th highest pyramid ever built in Egypt. What really makes the Red Pyramid special today is the lack of crowds that plagues the Giza Plateau and the comparatively unregulated interior access.</TextLi>
-            </StyleLi>
+          </StyleLi>
           <StyleLi>
-          <TitleP>Abu Simbel</TitleP>
+            <TitleP>Abu Simbel</TitleP>
             <TextLi>The twin temples were originally carved out of the mountainside during the reign of Pharaoh Ramesses The Great in the 13th century BC, as a lasting monument to himself and his queen Nefertari. </TextLi>
-            </StyleLi>
+          </StyleLi>
           <StyleLi>
-          <TitleP>Karnak</TitleP>
-            <TextLi>The Temple of Karnak actually consists of three main temples, smaller enclosed temples, and several outer temples located about 2.5 kilometers north of Luxor. One of most famous structures of Karnak is the Hypostyle Hall, a hall area of 5,000 m2 (50,000 sq ft) with 134 massive columns arranged in 16 rows. <br></br>Most of the work on Karnak was done by the pharaohs of the New Kingdom</TextLi>
-            </StyleLi>
+            <TitleP>Karnak</TitleP>
+            <TextLi>
+              The Temple of Karnak actually consists of three main temples, smaller enclosed temples, and several outer temples located about 2.5 kilometers north of Luxor. One of most famous structures of Karnak is the Hypostyle Hall, a hall area of 5,000 m2 (50,000 sq ft) with 134 massive columns arranged in 16 rows. <br></br>Most of the work on Karnak was done by the pharaohs of the New Kingdom
+            </TextLi>
+          </StyleLi>
           <StyleLi>
-          <TitleP>Pyramids of Giza</TitleP>
+            <TitleP>Pyramids of Giza</TitleP>
             <TextLi>The pyramids in Giza were built over the span of three generations – by Khufu, his second reigning son Khafre, and Menkaure. The Great Pyramid of Khufu is the oldest and sole remnant of the Seven Wonders of the Ancient World. Over 2 million blocks of stone were used to construct the pyramid, during a 20 year period concluding around 2560 BC. The pyramid is an awe-inspiring 139 meters (455 feet) high making it the largest pyramid in Egypt, although nearby Khafre’s Pyramid appears to be larger as it is build at a higher elevation.</TextLi>
-            </StyleLi>
+          </StyleLi>
         </StyledUl>
         <MapStyle>
-        <MapContainer
-          className="map"
-          center={positionHabouIcon}
-          zoom={this.state.zoom}
-        >
-          <Height>
-            <TileLayer
-              attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-              url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
-            />
-            <Marker position={positionHabouIcon} icon={this.HabouIcon}>
-              <Popup>Médinet Habou</Popup>
-            </Marker>
-            <Marker position={positionPhilaeIcon} icon={this.PhilaeIcon}>
-              <Popup>Le Temple d’Isis à Philae</Popup>
-            </Marker>
-            <Marker
-              position={positionHatchepsoutIcon}
-              icon={this.HatchepsoutIcon}
-            >
-              <Popup>Le temple de Hatchepsout</Popup>
-            </Marker>
-            <Marker position={positionMemnonIcon} icon={this.MemnonIcon}>
-              <Popup>Les Colosses de Memnon</Popup>
-            </Marker>
-            <Marker position={positionSethiIcon} icon={this.SethiIcon}>
-              <Popup>Le Temple funéraire de Séthi Ier</Popup>
-            </Marker>
-            <Marker position={positionSobekIcon} icon={this.SobekIcon}>
-              <Popup>Le Temple de Sobek et Haroëris</Popup>
-            </Marker>
-            <Marker position={positionLouxorIcon} icon={this.LouxorIcon}>
-              <Popup>Le Temple d’Amon à Louxor</Popup>
-            </Marker>
-            <Marker position={positionHorusIcon} icon={this.HorusIcon}>
-              <Popup>Le Temple d’Horus à Edfou</Popup>
-            </Marker>
-            <Marker position={positionSimbelIcon} icon={this.SimbelIcon}>
-              <Popup>Les Temples d’Abou Simbel</Popup>
-            </Marker>
-            <Marker position={positionKarnakIcon} icon={this.KarnakIcon}>
-              <Popup>Le Temple de Karnak</Popup>
-            </Marker>
-            <Marker position={positionDjeserIcon} icon={this.DjeserIcon}>
-              <Popup>La Pyramide à degré de Djéser</Popup>
-            </Marker>
-            <Marker position={positionSnefrouIcon} icon={this.SnefrouIcon}>
-              <Popup>La pyramide rhomboïdale</Popup>
-            </Marker>
-            <Marker position={positionKheopsIcon} icon={this.KheopsIcon}>
-              <Popup>La grande pyramide de Khéops</Popup>
-            </Marker>
-            <Marker position={positionGizehIcon} icon={this.GizehIcon}>
-              <Popup>La pyramide de Khéphren</Popup>
-            </Marker>
-            <Marker position={positionMykerinosIcon} icon={this.MykerinosIcon}>
-              <Popup>La pyramide de Mikérinos</Popup>
-            </Marker>
-          </Height>
-        </MapContainer>
+          <MapContainer className="map" center={positionHabouIcon} zoom={this.state.zoom}>
+            <Height>
+              <TileLayer attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" />
+              <Marker position={positionHabouIcon} icon={this.HabouIcon}>
+                <Popup>Médinet Habou</Popup>
+              </Marker>
+              <Marker position={positionPhilaeIcon} icon={this.PhilaeIcon}>
+                <Popup>Le Temple d’Isis à Philae</Popup>
+              </Marker>
+              <Marker position={positionHatchepsoutIcon} icon={this.HatchepsoutIcon}>
+                <Popup>Le temple de Hatchepsout</Popup>
+              </Marker>
+              <Marker position={positionMemnonIcon} icon={this.MemnonIcon}>
+                <Popup>Les Colosses de Memnon</Popup>
+              </Marker>
+              <Marker position={positionSethiIcon} icon={this.SethiIcon}>
+                <Popup>Le Temple funéraire de Séthi Ier</Popup>
+              </Marker>
+              <Marker position={positionSobekIcon} icon={this.SobekIcon}>
+                <Popup>Le Temple de Sobek et Haroëris</Popup>
+              </Marker>
+              <Marker position={positionLouxorIcon} icon={this.LouxorIcon}>
+                <Popup>Le Temple d’Amon à Louxor</Popup>
+              </Marker>
+              <Marker position={positionHorusIcon} icon={this.HorusIcon}>
+                <Popup>Le Temple d’Horus à Edfou</Popup>
+              </Marker>
+              <Marker position={positionSimbelIcon} icon={this.SimbelIcon}>
+                <Popup>Les Temples d’Abou Simbel</Popup>
+              </Marker>
+              <Marker position={positionKarnakIcon} icon={this.KarnakIcon}>
+                <Popup>Le Temple de Karnak</Popup>
+              </Marker>
+              <Marker position={positionDjeserIcon} icon={this.DjeserIcon}>
+                <Popup>La Pyramide à degré de Djéser</Popup>
+              </Marker>
+              <Marker position={positionSnefrouIcon} icon={this.SnefrouIcon}>
+                <Popup>La pyramide rhomboïdale</Popup>
+              </Marker>
+              <Marker position={positionKheopsIcon} icon={this.KheopsIcon}>
+                <Popup>La grande pyramide de Khéops</Popup>
+              </Marker>
+              <Marker position={positionGizehIcon} icon={this.GizehIcon}>
+                <Popup>La pyramide de Khéphren</Popup>
+              </Marker>
+              <Marker position={positionMykerinosIcon} icon={this.MykerinosIcon}>
+                <Popup>La pyramide de Mikérinos</Popup>
+              </Marker>
+            </Height>
+          </MapContainer>
         </MapStyle>
       </Main>
     );
