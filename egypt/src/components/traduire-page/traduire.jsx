@@ -46,7 +46,6 @@ class Traduire extends React.Component {
             <img src={`/images/${num}.jpg`} alt="icon" />
           ))}
         </Result>
-        {/* <img src="/images/egyptloop.gif" alt="" style={{ marginTop: "4vh" }} /> */}
       </Container>
     );
   }
