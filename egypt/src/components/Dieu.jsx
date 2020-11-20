@@ -20,6 +20,9 @@ const Container = styled.div`
   color: #072f8c;
   font-weight: 400;
   -webkit-text-size-adjust: 100%;
+  img {
+    padding: 20px;
+  }
 `;
 
 const Title = styled.h1`
