@@ -34,6 +34,7 @@ const List = styled.div`
   align-items: center;
   padding-top: 100px;
   height: 30%;
+  max-height: 30vh;
 
   a {
     text-decoration: none;
@@ -58,7 +59,7 @@ function App() {
         <List>
           <Link to="/traduire">Hieroglyphe</Link>
           <Link to="">Carte</Link>
-          <Link to="/Dieu">Dieux Egyptiens</Link>
+          <Link to="/Dieu">Gods of Egypt</Link>
           <Link to="/about">Qui sommes nous ?</Link>
         </List>
       </MenuStyled>

@@ -12,16 +12,21 @@ import neuf from "../images/neuf.png";
 import dix from "../images/dix.png";
 
 const Container = styled.div`
+  display: flex;
+  align-items: center;
   font-size: 16px;
   line-height: 1.6;
   font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", sans-serif;
-  color: #000;
+  color: #072f8c;
   font-weight: 400;
   -webkit-text-size-adjust: 100%;
 `;
 
 const Title = styled.h1`
-  color: #0d1a26;
+  display: flex;
+  align-items: center;
+
+  color: white;
   font-weight: 400;
 `;
 
@@ -33,15 +38,12 @@ const StyledComponents = () => (
         Osiris était un roi sage qui étaitmarié à sa sœur, Isis. Lorsqu'il fut
         assassiné par leur frère Seth, elleusa de magie pour le ressusciter dans
         le but d’avoir de lui un fils.Celui s’appela Horus et il vint venger la
-        mort de son père enassassinant son oncle. Horus est ensuite devenu le
+        mort de son père en assassinant son oncle. Horus est ensuite devenu le
         roi d'Égypte, tandisqu'Osiris est devenu le roi des morts et le juge des
-        enfers. LesÉgyptiens le considéraient comme triomphant de la mort ;
-        chaque pharaondeviendrait Osiris après sa mort alors que, de son vivant,
-        il étaitl'incarnation d'Horus. Osiris était également le dieu de la
-        végétationet était donc souvent peint la peau verte – le vert
-        symbolisant alors lacroissance nouvelle et la renaissance.
+        enfers.
       </Title>
     </Container>
+
     <Container>
       <img src={deux} alt="deux"></img>
       <Title>
@@ -49,18 +51,13 @@ const StyledComponents = () => (
         épouse et sœur d'Osiris. Lorsque son mari bien-aimé fut assassiné par
         leur frère Seth, elle rassembla les parties démembrées du corps d'Osiris
         et les réunit avec des bandages, jetant ainsi les bases de la pratique
-        de l'Égypte ancienne qui consistait à momifier les défunts. En ramenant
-        Osiris à la vie, Isis a également introduit le concept de résurrection
-        qui a profondément influencé d'autres religions également, y compris le
-        christianisme. Isis, représentée comme une femme tenant un Ankh dans sa
-        main et parfois avec un corps de femme et une tête de vache ou des
-        cornes de vache, était également vénérée comme déesse de la fertilité.
+        de l'Égypte ancienne qui consistait à momifier les défunts.
       </Title>
     </Container>
     <Container>
       <img src={trois} alt="trois"></img>
       <Title>
-        L'un des plus importants Dieux Égyptiens était le fils d'Osiris et
+        Horus,l'un des plus importants Dieux Égyptiens était le fils d'Osiris et
         d'Isis. Selon le célèbre mythe, il a vengé le meurtre de son père en
         assassinant son oncle Seth, ce pourquoi il devint le nouveau roi
         d'Égypte. Les premiers pharaons égyptiens ont par la suite légitimé
@@ -73,14 +70,13 @@ const StyledComponents = () => (
     <Container>
       <img src={quatre} alt="quatre"></img>
       <Title>
-        Le dieu de la sagesse, de l'écriture et de la magie était le plus
+        Thoth,le dieu de la sagesse, de l'écriture et de la magie était le plus
         souvent représenté sous la forme d’un homme à tête d'ibis. Thot était le
         scribe du monde souterrain, qui enregistrait un verdict concernant
         chaque défunt dans la salle de la Maât, entretenait la bibliothèque des
         dieux, écrivait les sorts du "Livre des morts" et rédigeait "Le Livre de
         Thot" (contenant les secrets de l'univers). Mais il a également joué un
-        rôle important dans de nombreux mythes de l'Égypte ancienne, agissant
-        comme arbitre entre les forces du bien et du mal.
+        rôle important dans de nombreux mythes de l'Égypte ancien.
       </Title>
     </Container>
     <Container>
@@ -91,10 +87,7 @@ const StyledComponents = () => (
         pyramides et à la résurrection des pharaons. Symboliquement, il naissait
         chaque matin au lever du soleil ; il mourrait symboliquement de la même
         façon à chaque coucher de soleil. Chaque nuit, il commençait un voyage
-        dans le Monde souterrain. Plus tard, Rê fut étroitement associé à Horus
-        et, tout comme ce dernier, il était généralement représenté par un homme
-        à tête de faucon. Cependant, plutôt qu’une couronne blanche et rouge, Râ
-        était représenté portant un disque solaire sur la tête.
+        dans le Monde souterrain. Plus tard, Rê fut étroitement associé à Horus.
       </Title>
     </Container>
     <Container>
@@ -107,22 +100,18 @@ const StyledComponents = () => (
         voir représenté en cochon, crocodile, scorpion ou en hippopotame. Seth
         est l'un des personnages principaux de la légende d'Osiris et d'Isis. En
         raison de la popularité croissante du culte d'Osiris, Seth s’est vu
-        diabolisé et ses images ont été retirées des temples. Dans certaines
-        parties de l'Égypte ancienne, il a cependant continué à être vénéré
-        comme l'une des principales divinités.
+        diabolisé et ses images ont été retirées des temples.
       </Title>
     </Container>
     <Container>
       <img src={sept} alt="sept"></img>
       <Title>
-        En tant qu'épouse d'Amon et mère de Khons, Mout était l'un des
+        Mut,en tant qu'épouse d'Amon et mère de Khons, Mout était l'un des
         principaux.Vénérée comme la grande mère divine, Mut était généralement
         représentée comme une femme portant une couronne blanche et rouge, mais
         elle était aussi parfois représentée avec la tête ou le corps d'un
         vautour ou sous la forme d’une vache car, dans la période ultérieure,
-        elle a fusionné avec Hathor, une autre grande divinité « mère », qui
-        était généralement représentée sous la forme d’une femme avec des cornes
-        de vache ou, plus directement, sous la forme d’une vache.
+        elle a fusionné avec Hathor, une autre grande divinité « mère ».
       </Title>
     </Container>
     <Container>
@@ -158,9 +147,7 @@ const StyledComponents = () => (
         l'influence de Memphis s'étendait sur l'Égypte, il est devenu populaire
         ailleurs partout ailleurs. Il était un dieu créateur et la divinité
         protectrice de l'artisanat et du travail manuel. Ptah était généralement
-        représenté comme une figure momifiée avec ses mains dépassant du
-        bandage, tenant un bâton gravé des symboles de l’autorité et de la
-        stabilité.
+        représenté comme une figure momifiée.
       </Title>
     </Container>
   </div>
