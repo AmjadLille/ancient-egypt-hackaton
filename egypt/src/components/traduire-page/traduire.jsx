@@ -31,15 +31,15 @@ class Traduire extends React.Component {
     return (
       <Container>
         <Header>
-          <img src="/images/eye.gif" alt="eye" />
+          {/* <img src="/images/eye.gif" alt="eye" /> */}
           <Title style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>See your Words as written in Egyptian Hieroglyphics </Title>
-          <img src="/images/eye.gif" alt="eye" />
+          {/* <img src="/images/eye.gif" alt="eye" /> */}
         </Header>
         <Label style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Transfer English to hieroglyphics</Label>
         <Trad>
           <form onSubmit={this.handleSubmit}>
             <Text value={text} onChange={this.handleChange} rows={5} cols={50} />
-            <input type="submit" value="Translate" style={{ marginTop: "15px", height: "3vh", fontSize: "18px" }} />
+            <input type="submit" value="Translate" style={{ marginTop: "15px", height: "3vh", width: "6vw", fontSize: "18px", borderRadius: "25px" }} />
           </form>
         </Trad>
 
