@@ -1,10 +1,10 @@
-
 import React from "react";
 import styled from "styled-components";
 import { Route, Switch, Link } from "react-router-dom";
 import About from "./components/About";
 import Traduir from "./components/traduire-page/traduire";
 import HomePage from "./components/homepage";
+import Dieu from "./components/Dieu";
 import Carte from './components/Carte';
 
 const ContainerStyled = styled.div`
@@ -35,12 +35,16 @@ const List = styled.div`
   align-items: center;
   padding-top: 100px;
   height: 30%;
+  max-height: 30vh;
 
   a {
     text-decoration: none;
     color: white;
     font-size: 24px;
     padding: 150px auto;
+    &:hover {
+      color: #ffd700;
+    }
   }
 `;
 
@@ -60,30 +64,31 @@ function App() {
           <Link to="">
             <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Carte</a>
           </Link>
-          <Link to="">
-            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Pyramides</a>
-          </Link>
           <Link to="/traduire">
             <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Hieroglyphe</a>
+          </Link>
+          <Link to="/Dieu">
+            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Gods of Egypt</a>
+          </Link>
+          <Link to="/Carte">
+            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Chariotry race</a>
           </Link>
           <Link to="/about">
             <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Qui sommes nous ?</a>
           </Link>
-          <Link to="/Carte">
-            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>Course de chars</a>
-          </Link>
         </List>
-        
       </MenuStyled>
       <Right>
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/about" component={About} />
           <Route path="/traduire" component={Traduir} />
+          <Route path="/Dieu" component={Dieu} />
           <Route path="/Carte" component={Carte} />
         </Switch>
       </Right>
     </ContainerStyled>
   );
 }
+
 export default App;

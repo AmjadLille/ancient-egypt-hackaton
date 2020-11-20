@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import L from 'leaflet';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
-
+import styled from "styled-components";
 import './Carte.css';
 
 import RedLeaf from '../assets/RedLeaf.png';
@@ -10,6 +10,7 @@ import LeafShadow from '../assets/LeafShadow.png';
 import CharUn from '../assets/CharUn.png'
 import CharDeux from '../assets/CharDeux.png'
 import TouTanKaMont from '../assets/TouTanKaMont.png'
+
 class Carte extends Component {
   constructor(props) {
     super(props);
@@ -166,10 +167,10 @@ getDistance(){
   const CharDeuxPosLon = this.state.CharDeuxIcon.lng;
   const LatCharLat = CharDeuxPosLat - CharUnPosLat;
   const LonCharLon = CharDeuxPosLon - CharUnPosLon;
-  console.log(LatCharLat)
+ 
   const MiddleLat = (CharUnPosLat + CharDeuxPosLat)/2;
   const MiddleLon = (CharUnPosLon + CharDeuxPosLon)/2;
-  console.log(this.state.zoom)
+  
   if((LatCharLat > 0.01) || (LatCharLat < -0.01) || (LonCharLon > 0.01) || (LonCharLon < -0.01)){
     this.setState ({zoom : 13, CenterOftheMap : {lat: MiddleLat , lng: MiddleLon } })  
   }
@@ -187,19 +188,17 @@ getDistance(){
   }
   const LatUnWinDetecte = (this.state.TouTanKaMontIcon.lat) - CharUnPosLat;
   const LonUnWinDetecte = (this.state.TouTanKaMontIcon.lng) - CharUnPosLon;
-  if((LatUnWinDetecte < 0.0002) && (LonUnWinDetecte < 0.0002)){
-    this.setState ({ Winner : 'Le joueur 1 à gagné ! Vive le joueur 1'})  
+  if(((LatUnWinDetecte < 0.0002) && (LonUnWinDetecte < 0.0002))){
+    this.setState ({ Winner : 'Ra win !'})  
   }
   const LatDeuxWinDetecte = (this.state.TouTanKaMontIcon.lat) - CharDeuxPosLat;
+  const LonDeuxWinDetecte = (this.state.TouTanKaMontIcon.lat) - CharDeuxPosLon;
   console.log(LatDeuxWinDetecte)
-  const LonDeuxWinDetecte = (this.state.TouTanKaMontIcon.lng) - CharDeuxPosLon;
-  if((LatDeuxWinDetecte < 0.0002) && (LonDeuxWinDetecte < 0.0002)){
-    this.setState ({ Winner : 'Le joueur 2 à gagné ! Vive le joueur 2'})  
+  console.log(LonDeuxWinDetecte)
+  if(((LatDeuxWinDetecte < 0.0002) && (LonDeuxWinDetecte < 0.0002))){
+    this.setState ({ Winner : 'Akhenaten win ! '})  
   }
-
-
 }
-
 
   render() {
 
@@ -224,12 +223,16 @@ getDistance(){
       
  
         <div onKeyUp={this.CharUnMove} onKeyDown={this.CharDeuxMove}>
-             <p style={{marginLeft:'50vh', color:'white', fontSize:'4vh'}}> Cliquez sur l'écran pour commencer </p>
-             <p style={{marginLeft:'50vh', color:'white', fontSize:'4vh'}}> Joueur 1 : qad  </p>
-             <p style={{marginLeft:'50vh', color:'white', fontSize:'4vh'}}> Joueur 2 : space w j  </p>
-             { this.state.Winner != null ? (<p style={{marginLeft:'50vh', color:'Red', fontSize:'6vh'}}> {this.state.Winner} </p>) : (
-              <p style={{marginLeft:'50vh', color:'white', fontSize:'4vh'}}> Pas de Winner  </p>
+             <ContainerFlex>
+             <p style={{marginLeft:'23vh', color: '#ffd700', fontSize:'7vh'}}> Ra VS Akhenaten</p> 
+             <p style={{marginLeft:'13vh', color:'white', fontSize:'4vh', width: '40vw'}}> Ra : q move left - a move up - d move down</p>
+             <p style={{marginLeft:'7vh', color:'white', fontSize:'4vh', width: '60vw'}}> Akhenaten : space move left - w move up - j move down  </p>
+         
+             </ContainerFlex>
+             { this.state.Winner != null ? (<p style={{marginLeft:'60vh', color:'Red', fontSize:'6vh'}}> {this.state.Winner} </p>) : (
+              <p style={{marginLeft:'56vh', color:'Green', fontSize:'4vh'}}> Click on the map and play !  </p>
              )}
+            
               <Map
                 className="map"
                 center={this.state.CenterOftheMap}
@@ -241,17 +244,17 @@ getDistance(){
                 />
                 
                   <Marker position={LocationIcon} icon={this.UserLocationIcon}>
-                    <Popup>ça part de là </Popup>
+                    <Popup>Start</Popup>
                   </Marker>
                   <Marker position={CharUnIconLoc} icon={this.CharUnIcon}>
-                    <Popup>Joueur 1 </Popup>
+                    <Popup>Ra</Popup>
                   </Marker>
                   <Marker position={CharDeuxIconLoc} icon={this.CharDeuxIcon}>
-                    <Popup>Joueur 2 </Popup>
+                    <Popup>Akhenaten </Popup>
                   </Marker>
 
                   <Marker position={TouTanKaMontLoc} icon={this.TouTanKaMontIcon}>
-                    <Popup>C'est TouTanKaMont ! </Popup>
+                    <Popup>the Sphinx</Popup>
                   </Marker>
               </Map>
             </div>
@@ -260,5 +263,22 @@ getDistance(){
     )};
 
 }
+
+
+const ContainerFlex = styled.div`
+ 
+  align-items: center;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  color: #072f8c;
+  font-weight: 400;
+  -webkit-text-size-adjust: 100%;
+  margin-left: 15vw;
+`;
+
+
+
+
 export default Carte;
 
