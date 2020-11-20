@@ -62,14 +62,14 @@ function App() {
         </Link>
 
         <List>
+        <Link to="">
+            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>
+              Pyramides
+            </a>
+          </Link>
           <Link to="/Maps">
             <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>
               Monuments
-            </a>
-          </Link>
-          <Link to="">
-            <a style={{ fontFamily: "'Big Shoulders Inline Text', cursive" }}>
-              Pyramides
             </a>
           </Link>
           <Link to="/traduire">
